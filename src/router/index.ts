@@ -2,8 +2,9 @@ import { createRouter, createWebHashHistory } from "vue-router";
 
 import HomeView from "../views/HomeView.vue";
 import AboutView from "../views/AboutView.vue";
-import ErrorView from "../views/ErrorView.vue";
 import TicTacToeView from "../views/TicTacToeView.vue";
+import LegalView from "../views/LegalView.vue";
+import ErrorView from "../views/ErrorView.vue";
 
 const router = createRouter({
   history: createWebHashHistory(import.meta.env.BASE_URL),
@@ -19,6 +20,10 @@ const router = createRouter({
     {
       path: "/tictactoe",
       component: TicTacToeView,
+    },
+    {
+      path: "/legal-notice",
+      component: LegalView,
     },
     {
       path: "/404",

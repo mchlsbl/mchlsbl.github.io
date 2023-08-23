@@ -1,9 +1,9 @@
 <template>
   <footer class="p-3 bright blur shadow-lg">
-    <span class="right">2023, Michael</span
-    ><span class="left"
-      >Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span
+    <RouterLink to="/legal-notice" class="left link-light"
+      >Impressum</RouterLink
     >
+    <span class="right">Michael, 2023</span>
   </footer>
 </template>
 

@@ -68,17 +68,17 @@ export default {
 </script>
 
 <template>
-  <div class="center-game">
+  <div class="center-x">
     <div>
       <div class="grid">
         <img
           v-for="(value, index) in gameState"
           @click="setGameState(index)"
           :src="getImage(value)"
-          class="rounded highlight"
+          class="cell rounded highlight"
         />
       </div>
-      <div class="mt-5 justify text-center">
+      <div class="mt-5">
         <div v-if="gameWon !== ''" class="result">
           {{ gameWon === "circle" ? "O" : "X" }} hat gewonnen!
         </div>
@@ -96,14 +96,23 @@ export default {
 </template>
 
 <style>
-.center-game {
+.center-x {
   display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 .grid {
-  gap: 8px;
+  gap: 1vh;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+}
+
+.cell {
+  width: 12vh;
+  height: 12vh;
 }
 </style>
