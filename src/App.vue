@@ -7,7 +7,7 @@ import Footer from "./components/Footer.vue";
 <template>
   <Navbar />
 
-  <RouterView class="justify" />
+  <RouterView />
 
   <Footer />
 </template>
@@ -24,7 +24,7 @@ body {
   min-height: 100vh;
   position: relative;
 
-  background: linear-gradient(145deg, #1f2579, #130025, #783535, #d9aa73);
+  background: linear-gradient(145deg, #1f2579, #130025, #783535);
   background-size: 300%, 300%;
   background-attachment: fixed;
 
@@ -43,40 +43,38 @@ body {
   }
 }
 
-h1 {
-  text-align: left;
+section {
+  text-align: justify;
 }
 
 .blur {
-  backdrop-filter: blur(8px);
+  backdrop-filter: blur(7px);
 }
 
 .bright {
   background-color: rgba(255, 255, 255, 0.05);
 }
 
-.highlight {
-  box-shadow: 0px 0px 100px 20px rgba(255, 255, 255, 0.2);
-}
-
-.bar-padding {
-  padding-left: 10%;
-  padding-right: 10%;
-}
-
-.justify {
+main {
   padding-block: 150px;
-  text-align: justify;
   margin: 0 auto;
   width: 50%;
 }
 
+.bar-padding {
+  padding-left: 15%;
+  padding-right: 15%;
+}
+
 @media (max-width: 800px) {
-  .justify {
+  main {
     padding-block: 150px;
-    text-align: justify;
     margin: 0 auto;
     width: 75%;
+  }
+  .bar-padding {
+    padding-left: 10%;
+    padding-right: 10%;
   }
 }
 </style>

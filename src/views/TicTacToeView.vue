@@ -68,14 +68,14 @@ export default {
 </script>
 
 <template>
-  <div class="center-x">
+  <main class="center-x">
     <div>
       <div class="grid">
         <img
           v-for="(value, index) in gameState"
           @click="setGameState(index)"
           :src="getImage(value)"
-          class="cell rounded highlight"
+          class="cell rounded"
         />
       </div>
       <div class="mt-5">
@@ -92,7 +92,7 @@ export default {
         </button>
       </div>
     </div>
-  </div>
+  </main>
 </template>
 
 <style>
@@ -114,5 +114,6 @@ export default {
 .cell {
   width: 12vh;
   height: 12vh;
+  box-shadow: 0px 0px 100px 20px rgba(255, 255, 255, 0.1);
 }
 </style>
