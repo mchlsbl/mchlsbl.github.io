@@ -7,12 +7,17 @@ import Footer from "./components/Footer.vue";
 <template>
   <Navbar />
 
-  <RouterView class="justify" style="padding-block: 150px" />
+  <RouterView class="justify" />
 
   <Footer />
 </template>
 
 <style>
+html {
+  overflow-x: hidden;
+  margin-right: calc(-1 * (100vw - 100%));
+}
+
 body {
   color: white;
 
@@ -54,7 +59,13 @@ h1 {
   box-shadow: 0px 0px 100px 20px rgba(255, 255, 255, 0.2);
 }
 
+.bar-padding {
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
 .justify {
+  padding-block: 150px;
   text-align: justify;
   margin: 0 auto;
   width: 50%;
@@ -62,9 +73,10 @@ h1 {
 
 @media (max-width: 800px) {
   .justify {
+    padding-block: 150px;
     text-align: justify;
     margin: 0 auto;
-    width: 70%;
+    width: 75%;
   }
 }
 </style>
