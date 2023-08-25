@@ -13,21 +13,22 @@ import Footer from "./components/Footer.vue";
 </template>
 
 <style>
-html {
-  overflow-x: hidden;
-  margin-right: calc(-1 * (100vw - 100%));
-}
-
 body {
+  /* Font */
+  font-family: "Figtree", sans-serif;
   color: white;
 
+  /* Scrollbar always visible */
+  overflow-y: scroll;
+
+  /* Footer compatibility */
   min-height: 100vh;
   position: relative;
 
+  /* Background */
   background: linear-gradient(145deg, #1f2579, #130025, #783535);
   background-size: 300%, 300%;
   background-attachment: fixed;
-
   animation: BackgroundGradient 80s ease infinite;
 }
 
@@ -54,6 +55,8 @@ section {
 .bright {
   background-color: rgba(255, 255, 255, 0.05);
 }
+
+/* Page padding */
 
 main {
   padding-block: 150px;
