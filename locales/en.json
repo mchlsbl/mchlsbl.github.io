@@ -1,0 +1,14 @@
+{
+	"home": {
+		"p1": {
+			"title": "My breathtaking portfolio.",
+			"text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sit amet elementum tellus. Ut elementum, ante non viverra posuere, turpis sem dictum augue, non sagittis velit ipsum et lorem. Duis augue nibh, tincidunt eget magna sed, volutpat tempor urna. In hac habitasse platea dictumst. Quisque lacinia purus in fermentum hendrerit. Fusce lorem elit, rutrum id eros posuere, dapibus viverra mi. Nunc dictum sollicitudin lectus eget cursus. Donec mattis nec dolor eget lacinia. Nam aliquam ex eu imperdiet luctus. Etiam sed auctor tellus, id sagittis ex. Integer posuere ex mauris, ut suscipit quam imperdiet nec. Maecenas eu ante eget nisi vehicula tincidunt eget nec ex. Nulla convallis in quam nec elementum. Nunc scelerisque sem quis leo feugiat posuere."
+		}
+	},
+	"projects": {
+		"p1": {
+			"title": "Systolic",
+			"text": "Text"
+		}
+	}
+}
