@@ -1,14 +1,38 @@
 {
+	"404": {
+		"error": "This page doesn't exist."
+	},
+	"navbar": {
+		"about": "About me",
+		"projects": "My projects",
+		"contact": "Contact me",
+		"tictactoe": "Tic Tac Toe"
+	},
 	"home": {
 		"p1": {
-			"title": "My breathtaking portfolio.",
+			"title": "Welcome to my portfolio.",
+			"text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sit amet elementum tellus. Ut elementum, ante non viverra posuere, turpis sem dictum augue, non sagittis velit ipsum et lorem. Duis augue nibh, tincidunt eget magna sed, volutpat tempor urna. In hac habitasse platea dictumst. Quisque lacinia purus in fermentum hendrerit. Fusce lorem elit, rutrum id eros posuere, dapibus viverra mi. Nunc dictum sollicitudin lectus eget cursus. Donec mattis nec dolor eget lacinia. Nam aliquam ex eu imperdiet luctus. Etiam sed auctor tellus, id sagittis ex. Integer posuere ex mauris, ut suscipit quam imperdiet nec. Maecenas eu ante eget nisi vehicula tincidunt eget nec ex. Nulla convallis in quam nec elementum. Nunc scelerisque sem quis leo feugiat posuere."
+		}
+	},
+	"about": {
+		"p1": {
+			"title": "About me.",
 			"text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sit amet elementum tellus. Ut elementum, ante non viverra posuere, turpis sem dictum augue, non sagittis velit ipsum et lorem. Duis augue nibh, tincidunt eget magna sed, volutpat tempor urna. In hac habitasse platea dictumst. Quisque lacinia purus in fermentum hendrerit. Fusce lorem elit, rutrum id eros posuere, dapibus viverra mi. Nunc dictum sollicitudin lectus eget cursus. Donec mattis nec dolor eget lacinia. Nam aliquam ex eu imperdiet luctus. Etiam sed auctor tellus, id sagittis ex. Integer posuere ex mauris, ut suscipit quam imperdiet nec. Maecenas eu ante eget nisi vehicula tincidunt eget nec ex. Nulla convallis in quam nec elementum. Nunc scelerisque sem quis leo feugiat posuere."
 		}
 	},
 	"projects": {
 		"p1": {
-			"title": "Systolic",
+			"title": "Systolic.",
 			"text": "Text"
 		}
+	},
+	"contact": {
+		"title": "Contact me.",
+		"email": "E-mail: "
+	},
+	"tictactoe": {
+		"won": " won.",
+		"tie": "It's a tie.",
+		"retry": "Play again"
 	}
 }

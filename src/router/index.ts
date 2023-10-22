@@ -2,9 +2,10 @@ import { createRouter, createWebHashHistory } from "vue-router";
 
 import HomeView from "../views/HomeView.vue";
 import AboutView from "../views/AboutView.vue";
+import ProjectsView from "../views/ProjectsView.vue";
+import ContactView from "../views/ContactView.vue";
 import TicTacToeView from "../views/TicTacToeView.vue";
 import ErrorView from "../views/ErrorView.vue";
-// import LegalView from "../views/LegalView.vue";
 
 const router = createRouter({
 	history: createWebHashHistory(import.meta.env.BASE_URL),
@@ -18,6 +19,14 @@ const router = createRouter({
 			component: AboutView,
 		},
 		{
+			path: "/projects",
+			component: ProjectsView,
+		},
+		{
+			path: "/contact",
+			component: ContactView,
+		},
+		{
 			path: "/tictactoe",
 			component: TicTacToeView,
 		},
@@ -29,10 +38,6 @@ const router = createRouter({
 			path: "/:notFound",
 			redirect: "/404",
 		},
-		// {
-		//   path: "/legal-notice",
-		//   component: LegalView,
-		// },
 	],
 });
 
