@@ -78,9 +78,7 @@ export default {
 				/>
 			</div>
 			<div class="mt-5">
-				<div v-if="gameWon !== ''" class="result">
-					{{ gameWon === "circle" ? "Ｏ" : "Ｘ" }}{{ $t("tictactoe.won") }}
-				</div>
+				<div v-if="gameWon !== ''" class="result">{{ gameWon === "circle" ? "O" : "X" }}{{ $t("tictactoe.won") }}</div>
 				<div v-else-if="isDraw" class="result">{{ $t("tictactoe.tie") }}</div>
 				<button v-if="gameWon !== '' || isDraw" @click="initGame" class="mt-4 btn btn-light">
 					{{ $t("tictactoe.retry") }}

@@ -23,7 +23,7 @@
 	"projects": {
 		"systolic": {
 			"title": "Systolic.",
-			"text": "A blood pressure and medication tracking app. Supports the import and export of the data in the PDF and the CSV formats, as well as setting reminders for measurement."
+			"text": "Systolic is an app for tracking blood pressure readings and medication use, with support for importing and exporting these readings using PDF and CSV files, as well as measurement reminders."
 		}
 	},
 	"contact": {
