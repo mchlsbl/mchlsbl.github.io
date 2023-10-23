@@ -1,6 +1,6 @@
 {
-	"404": {
-		"error": "このページは存在しません｡"
+	"error": {
+		"text": "このページは存在しません｡"
 	},
 	"navbar": {
 		"about": "私は",
@@ -21,14 +21,14 @@
 		}
 	},
 	"projects": {
-		"p1": {
+		"systolic": {
 			"title": "Systolic.",
-			"text": "Text"
+			"text": "血圧トラッカーです。Unterstützt Import und Export der Werte als PDF und CSV. Kann auf Wunsch auch an die Messung erinnern."
 		}
 	},
 	"contact": {
 		"title": "連絡先｡",
-		"email": "メール："
+		"email": "メール"
 	},
 	"tictactoe": {
 		"won": "が勝ちました｡",

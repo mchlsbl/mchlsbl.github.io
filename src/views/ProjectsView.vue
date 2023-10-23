@@ -1,8 +1,8 @@
 <template>
 	<main>
-		<h1 class="mb-5 fw-bold display">{{ $t("projects.p1.title") }}</h1>
+		<h1 class="mb-5 fw-bold display">{{ $t("projects.systolic.title") }}</h1>
 		<section class="lead">
-			<p>{{ $t("projects.p1.text") }}</p>
+			<p>{{ $t("projects.systolic.text") }}</p>
 		</section>
 	</main>
 </template>

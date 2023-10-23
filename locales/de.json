@@ -1,6 +1,6 @@
 {
-	"404": {
-		"error": "Diese Seite existiert nicht."
+	"error": {
+		"text": "Diese Seite existiert nicht."
 	},
 	"navbar": {
 		"about": "Über mich",
@@ -21,14 +21,14 @@
 		}
 	},
 	"projects": {
-		"p1": {
+		"systolic": {
 			"title": "Systolic.",
-			"text": "Text"
+			"text": "Eine App zum Tracking von Blutdruckmesswerten samt Medikation. Unterstützt den Import und Export der Werte im PDF und CSV Format, sowie die Einstellung von Erinnerungen für Messungen."
 		}
 	},
 	"contact": {
 		"title": "Kontakt.",
-		"email": "E-Mail: "
+		"email": "E-Mail"
 	},
 	"tictactoe": {
 		"won": " hat gewonnen.",

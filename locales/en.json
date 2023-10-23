@@ -1,6 +1,6 @@
 {
-	"404": {
-		"error": "This page doesn't exist."
+	"error": {
+		"text": "This page doesn't exist."
 	},
 	"navbar": {
 		"about": "About me",
@@ -21,14 +21,14 @@
 		}
 	},
 	"projects": {
-		"p1": {
+		"systolic": {
 			"title": "Systolic.",
-			"text": "Text"
+			"text": "A blood pressure and medication tracking app. Supports the import and export of the data in the PDF and the CSV formats, as well as setting reminders for measurement."
 		}
 	},
 	"contact": {
 		"title": "Contact me.",
-		"email": "E-mail: "
+		"email": "E-mail"
 	},
 	"tictactoe": {
 		"won": " won.",

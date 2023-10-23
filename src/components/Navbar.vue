@@ -1,5 +1,3 @@
-<script setup lang="ts"></script>
-
 <template>
 	<nav class="navbar navbar-dark navbar-expand-lg fixed-top shadow-lg bright blur bar-padding">
 		<div class="container-fluid">
