@@ -1,0 +1,39 @@
+{
+	"error": {
+		"text": "Diese Seite existiert nicht."
+	},
+	"navbar": {
+		"home": "Home",
+		"about": "Über mich",
+		"projects": "Meine Projekte",
+		"contact": "Kontakt",
+		"tictactoe": "Tic Tac Toe"
+	},
+	"home": {
+		"p1": {
+			"title": "Willkommen zu meinem Portfolio.",
+			"text": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet."
+		}
+	},
+	"about": {
+		"p1": {
+			"title": "Über mich.",
+			"text": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet."
+		}
+	},
+	"projects": {
+		"systolic": {
+			"title": "Systolic.",
+			"text": "Systolic ist eine App zum Tracking von Blutdruckwerten, einschließlich der Medikation, mit Unterstützung für den Import und Export der Werte im PDF- und CSV-Format, sowie mit Unterstützung für konfigurierbare Erinnerungen an Messungen."
+		}
+	},
+	"contact": {
+		"title": "Kontakt.",
+		"email": "E-Mail"
+	},
+	"tictactoe": {
+		"won": " hat gewonnen.",
+		"tie": "Gleichstand.",
+		"retry": "Nochmal spielen"
+	}
+}

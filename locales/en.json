@@ -1,0 +1,39 @@
+{
+	"error": {
+		"text": "This page doesn't exist."
+	},
+	"navbar": {
+		"home": "Home",
+		"about": "About me",
+		"projects": "My projects",
+		"contact": "Contact me",
+		"tictactoe": "Tic Tac Toe"
+	},
+	"home": {
+		"p1": {
+			"title": "Welcome to my portfolio.",
+			"text": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet."
+		}
+	},
+	"about": {
+		"p1": {
+			"title": "About me.",
+			"text": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet."
+		}
+	},
+	"projects": {
+		"systolic": {
+			"title": "Systolic.",
+			"text": "Systolic is an app for tracking blood pressure readings and medication use, with support for importing and exporting these readings using PDF and CSV files, as well as measurement reminders."
+		}
+	},
+	"contact": {
+		"title": "Contact me.",
+		"email": "E-mail"
+	},
+	"tictactoe": {
+		"won": " won.",
+		"tie": "It's a tie.",
+		"retry": "Play again"
+	}
+}
