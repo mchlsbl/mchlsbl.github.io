@@ -1,13 +1,15 @@
 <template>
-    <footer class="bright blur shadow-lg">
-        <div class="bar-padding">
-            <div class="flex-container">
-                <div><LocaleSwitcher /></div>
-                <div style="flex-grow: 1"></div>
-                <div>mchlsbl, 2024</div>
+    <div style="padding-top: 70px">
+        <footer class="bright blur shadow-lg">
+            <div class="bar-padding">
+                <div class="flex-container">
+                    <div><LocaleSwitcher /></div>
+                    <div style="flex-grow: 1"></div>
+                    <div>mchlsbl, 2024</div>
+                </div>
             </div>
-        </div>
-    </footer>
+        </footer>
+    </div>
 </template>
 
 <style>

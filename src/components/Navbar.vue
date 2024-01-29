@@ -7,13 +7,13 @@
                 >🔮 mchlsbl</RouterLink
             >
             <span
-                class="navbar-toggler navbar-toggler-icon"
+                class="navbar-toggler navbar-toggler-icon me-1"
                 type="button"
                 data-bs-toggle="collapse"
                 data-bs-target="#collapse"
             ></span>
-            <div class="navbar-collapse collapse text-end" id="collapse">
-                <ul class="navbar-nav ms-auto">
+            <div class="navbar-collapse collapse text-center" id="collapse">
+                <ul class="navbar-nav ms-auto navbar-margin-top">
                     <li class="nav-item">
                         <RouterLink
                             to="/"
@@ -68,5 +68,11 @@
     outline: none;
     border: none;
     box-shadow: none;
+}
+
+@media (max-width: 991px) {
+    .navbar-margin-top {
+        margin-top: 1rem;
+    }
 }
 </style>
