@@ -13,8 +13,8 @@ import en from "../locales/en.json";
 import ja from "../locales/ja.json";
 
 const i18n = createI18n({
-	locale: "de",
-	messages: { de, en, ja },
+    locale: "de",
+    messages: { de, en, ja },
 });
 
 const app = createApp(App);

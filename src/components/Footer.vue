@@ -1,16 +1,25 @@
 <template>
-	<footer class="p-3 bright blur shadow-lg">
-		<div class="bar-padding">
-			<div style="float: left"><LocaleSwitcher /></div>
-			<div style="float: right">mchlsbl, 2024</div>
-		</div>
-	</footer>
+    <footer class="bright blur shadow-lg">
+        <div class="bar-padding">
+            <div class="flex-container">
+                <div><LocaleSwitcher /></div>
+                <div style="flex-grow: 1"></div>
+                <div>mchlsbl, 2024</div>
+            </div>
+        </div>
+    </footer>
 </template>
 
 <style>
 footer {
-	bottom: 0;
-	width: 100%;
-	position: absolute;
+    bottom: 0;
+    width: 100%;
+    position: absolute;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 </style>
