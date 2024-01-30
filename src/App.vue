@@ -4,6 +4,7 @@ import Footer from "./components/Footer.vue";
 </script>
 
 <template>
+    <div class="bg"></div>
     <div class="footer-spacing">
         <Navbar />
         <RouterView />
@@ -24,19 +25,20 @@ import Footer from "./components/Footer.vue";
     }
 }
 
-body {
+.bg {
     background: linear-gradient(170deg, #a84300, #030053, #000000);
-    animation: BackgroundGradient 20s ease-in-out infinite;
     background-size: 500% 200%;
-    background-attachment: fixed;
+    animation: BackgroundGradient 20s ease-in-out infinite;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+    position: fixed;
+}
 
+body {
     overflow-y: scroll;
     font-family: "Figtree", sans-serif;
     color: white;
-}
-
-section {
-    text-align: justify;
 }
 
 main {
@@ -44,6 +46,10 @@ main {
     margin: 0 auto;
     padding-top: 200px;
     padding-bottom: 150px;
+}
+
+section {
+    text-align: justify;
 }
 
 .bar-padding {
@@ -57,10 +63,16 @@ main {
         padding-top: 150px;
         padding-bottom: 100px;
     }
+
+    section {
+        text-align: left;
+    }
+
     .bar-padding {
         padding-left: 8%;
         padding-right: 8%;
     }
+
     .navbar-margin-top {
         margin-top: 0.5rem;
     }
