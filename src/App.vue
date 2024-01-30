@@ -4,35 +4,14 @@ import Footer from "./components/Footer.vue";
 </script>
 
 <template>
-    <Navbar />
-    <RouterView />
-    <Footer />
+    <div class="footer-spacing">
+        <Navbar />
+        <RouterView />
+        <Footer />
+    </div>
 </template>
 
 <style>
-body {
-    /* Font */
-
-    font-family: "Figtree", sans-serif;
-    color: white;
-
-    /* Scrollbar always visible */
-
-    overflow-y: scroll;
-
-    /* Footer compatibility */
-
-    min-height: 100vh;
-    position: relative;
-
-    /* Background */
-
-    background: linear-gradient(145deg, #171b5a, #130025, #5c2828);
-    background-size: 300%, 300%;
-    background-attachment: fixed;
-    animation: BackgroundGradient 80s ease infinite;
-}
-
 @keyframes BackgroundGradient {
     0% {
         background-position: 0% 50%;
@@ -45,24 +24,26 @@ body {
     }
 }
 
+body {
+    background: linear-gradient(170deg, #a84300, #030053, #000000);
+    animation: BackgroundGradient 20s ease-in-out infinite;
+    background-size: 500% 200%;
+    background-attachment: fixed;
+
+    overflow-y: scroll;
+    font-family: "Figtree", sans-serif;
+    color: white;
+}
+
 section {
     text-align: justify;
 }
 
-.blur {
-    backdrop-filter: blur(7px);
-}
-
-.bright {
-    background-color: rgba(255, 255, 255, 0.05);
-}
-
-/* Page padding */
-
 main {
-    padding-block: 150px;
-    margin: 0 auto;
     width: 50%;
+    margin: 0 auto;
+    padding-top: 200px;
+    padding-bottom: 150px;
 }
 
 .bar-padding {
@@ -70,15 +51,29 @@ main {
     padding-right: 15%;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 991px) {
     main {
-        padding-block: 150px;
-        margin: 0 auto;
         width: 75%;
+        padding-top: 150px;
+        padding-bottom: 100px;
     }
     .bar-padding {
-        padding-left: 10%;
-        padding-right: 10%;
+        padding-left: 8%;
+        padding-right: 8%;
     }
+    .navbar-margin-top {
+        margin-top: 0.5rem;
+    }
+}
+
+.footer-spacing {
+    display: grid;
+    grid-template-rows: 1fr;
+    min-height: 100vh;
+}
+
+.blur {
+    backdrop-filter: blur(7px);
+    background-color: rgba(255, 255, 255, 0.05);
 }
 </style>

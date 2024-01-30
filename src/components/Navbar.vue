@@ -1,10 +1,10 @@
 <template>
     <nav
-        class="navbar navbar-dark navbar-expand-lg fixed-top shadow-lg bright blur bar-padding"
+        class="navbar navbar-dark navbar-expand-lg fixed-top shadow-lg blur bar-padding"
     >
         <div class="container-fluid">
             <RouterLink to="/" class="navbar-brand" active-class="active"
-                >🔮 mchlsbl</RouterLink
+                >✨ mchlsbl</RouterLink
             >
             <span
                 class="navbar-toggler navbar-toggler-icon me-1"
@@ -68,11 +68,5 @@
     outline: none;
     border: none;
     box-shadow: none;
-}
-
-@media (max-width: 991px) {
-    .navbar-margin-top {
-        margin-top: 1rem;
-    }
 }
 </style>
