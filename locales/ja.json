@@ -1,39 +1,39 @@
 {
-	"error": {
-		"text": "このページは存在しません｡"
-	},
-	"navbar": {
-		"home": "ホーム",
-		"about": "私は",
-		"projects": "プロジェクト",
-		"contact": "連絡先",
-		"tictactoe": "ＯＸゲーム"
-	},
-	"home": {
-		"p1": {
-			"title": "私のポートフォリオへようこそ｡",
-			"text": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet."
-		}
-	},
-	"about": {
-		"p1": {
-			"title": "私は｡",
-			"text": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet."
-		}
-	},
-	"projects": {
-		"systolic": {
-			"title": "Systolic.",
-			"text": "Systolicは、血圧測定値や薬の使用状況を記録するためのアプリで、PDFファイルやCSVファイルを使ったデータのインポートやエクスポート、測定リマインダーをサポートしています。"
-		}
-	},
-	"contact": {
-		"title": "連絡先｡",
-		"email": "メール"
-	},
-	"tictactoe": {
-		"won": "が勝ちました｡",
-		"tie": "引き分けです｡",
-		"retry": "再びプレー"
-	}
+    "error": {
+        "text": "このページは存在しません｡"
+    },
+    "navbar": {
+        "home": "ホーム",
+        "about": "私は",
+        "projects": "プロジェクト",
+        "contact": "連絡先",
+        "tictactoe": "ＯＸゲーム"
+    },
+    "home": {
+        "p1": {
+            "title": "私のポートフォリオへようこそ｡",
+            "text": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet."
+        }
+    },
+    "about": {
+        "p1": {
+            "title": "私は｡",
+            "text": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet."
+        }
+    },
+    "projects": {
+        "systolic": {
+            "title": "Systolic.",
+            "text": "Systolicは、血圧と薬の使用を追跡するためのAndroidアプリです。計測のリマインダーを設定したり、計測のバックアップを作成したり、履歴をPDFファイルとしてエクスポートしたりすることができます。"
+        }
+    },
+    "contact": {
+        "title": "連絡先｡",
+        "email": "メール"
+    },
+    "tictactoe": {
+        "won": "が勝ちました｡",
+        "tie": "引き分けです｡",
+        "retry": "再びプレー"
+    }
 }
