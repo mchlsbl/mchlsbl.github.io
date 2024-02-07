@@ -28,7 +28,7 @@ import Footer from "./components/Footer.vue";
 .bg {
     background: linear-gradient(170deg, #a84300, #030053, #000000);
     background-size: 500% 200%;
-    animation: BackgroundGradient 20s ease-in-out infinite;
+    animation: BackgroundGradient 40s ease-in-out infinite;
     width: 100vw;
     height: 100vh;
     z-index: -1;
