@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory } from "vue-router";
 
 import HomeView from "../views/HomeView.vue";
+import BlogView from "../views/BlogView.vue";
 import NotFoundView from "../views/NotFoundView.vue";
 
 const router = createRouter({
@@ -11,15 +12,22 @@ const router = createRouter({
       component: HomeView,
     },
     {
-      path: "/:pathMatch(.*)*",
+      path: "/blog",
+      component: BlogView,
+    },
+    {
+      path: "/404",
       component: NotFoundView,
+    },
+    {
+      path: "/:notFound",
+      redirect: "/404",
     },
   ],
   scrollBehavior(to) {
     if (to.hash) {
       return {
         el: to.hash,
-        top: 24,
         behavior: "smooth",
       };
     }
