@@ -7,7 +7,7 @@
         class="mt-16 border-t border-gray-100 pt-8 sm:flex sm:items-center sm:justify-between lg:mt-24"
       >
         <ul class="flex flex-wrap justify-center gap-4 text-xs lg:justify-end">
-          <li class="text-gray-600 transition">© 2024 mchlsbl</li>
+          <li class="text-gray-600 text-sm">© 2024 mchlsbl</li>
         </ul>
 
         <ul class="mt-8 flex justify-center gap-6 sm:mt-0 lg:justify-end">
@@ -16,12 +16,12 @@
               href="https://github.com/mchlsbl"
               rel="noreferrer"
               target="_blank"
-              class="text-gray-700 transition hover:opacity-75"
+              class="text-gray-700 hover:opacity-75"
             >
               <span class="sr-only">GitHub</span>
 
               <svg
-                class="h-6 w-6"
+                class="h-8 w-8"
                 fill="currentColor"
                 viewBox="0 0 24 24"
                 aria-hidden="true"

@@ -23,16 +23,13 @@ function toggleDropdown() {
   >
     <div class="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
       <div class="flex h-16 items-center justify-between">
-        <div class="flex-1 md:flex md:items-center md:gap-12">
-          <RouterLink class="block text-lg" to="/">✨ mchlsbl</RouterLink>
-        </div>
-
-        <div class="md:flex md:items-center md:gap-3">
-          <nav aria-label="Global" class="hidden md:block">
+        <RouterLink class="block text-xl" to="/">✨ mchlsbl</RouterLink>
+        <div class="md:flex md:gap-2">
+          <nav class="hidden md:block">
             <ul class="flex items-center gap-6 text-sm">
               <li v-for="item in navbarItems" :key="item.name">
                 <RouterLink
-                  class="text-black hover:text-gray-500/75"
+                  class="text-base text-black hover:text-gray-700/75"
                   :to="{ path: item.path, hash: item.hash }"
                   >{{ item.name }}</RouterLink
                 >
