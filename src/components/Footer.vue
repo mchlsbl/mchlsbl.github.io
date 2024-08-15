@@ -7,29 +7,13 @@
         class="mt-16 border-t border-gray-100 pt-8 sm:flex sm:items-center sm:justify-between lg:mt-24"
       >
         <ul class="flex flex-wrap justify-center gap-4 text-xs lg:justify-end">
-          <li>
-            <a href="#" class="text-gray-500 transition hover:opacity-75">
-              Terms & Conditions
-            </a>
-          </li>
-
-          <li>
-            <a href="#" class="text-gray-500 transition hover:opacity-75">
-              Privacy Policy
-            </a>
-          </li>
-
-          <li>
-            <a href="#" class="text-gray-500 transition hover:opacity-75">
-              Cookies
-            </a>
-          </li>
+          <li class="text-gray-600 transition">© 2024 mchlsbl</li>
         </ul>
 
         <ul class="mt-8 flex justify-center gap-6 sm:mt-0 lg:justify-end">
           <li>
             <a
-              href="#"
+              href="https://github.com/mchlsbl"
               rel="noreferrer"
               target="_blank"
               class="text-gray-700 transition hover:opacity-75"
