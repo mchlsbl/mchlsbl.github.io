@@ -3,6 +3,7 @@ import { RouterLink } from "vue-router";
 import { ref } from "vue";
 
 const navbarItems = [
+  { name: "Home", path: "/" },
   { name: "About", path: "/#about", hash: "#about" },
   { name: "Projects", path: "/#projects", hash: "#projects" },
   { name: "Contact", path: "/#contact", hash: "#contact" },
@@ -18,7 +19,7 @@ function toggleDropdown() {
 
 <template>
   <header
-    class="bg-white/[.5] fixed top-0 left-0 right-0 z-50 shadow-md backdrop-blur-md"
+    class="bg-white/[.7] backdrop-blur-md shadow-md fixed top-0 left-0 right-0 z-50"
   >
     <div class="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
       <div class="flex h-16 items-center justify-between">
@@ -31,7 +32,7 @@ function toggleDropdown() {
             <ul class="flex items-center gap-6 text-sm">
               <li v-for="item in navbarItems" :key="item.name">
                 <RouterLink
-                  class="text-gray-500 transition hover:text-gray-500/75"
+                  class="text-black transition hover:text-gray-500/75"
                   :to="{ path: item.path, hash: item.hash }"
                   >{{ item.name }}</RouterLink
                 >
