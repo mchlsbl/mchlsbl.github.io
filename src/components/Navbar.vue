@@ -32,7 +32,7 @@ function toggleDropdown() {
             <ul class="flex items-center gap-6 text-sm">
               <li v-for="item in navbarItems" :key="item.name">
                 <RouterLink
-                  class="text-black transition hover:text-gray-500/75"
+                  class="text-black hover:text-gray-500/75"
                   :to="{ path: item.path, hash: item.hash }"
                   >{{ item.name }}</RouterLink
                 >
@@ -43,7 +43,7 @@ function toggleDropdown() {
           <div class="flex items-center gap-4">
             <div class="block md:hidden">
               <button
-                class="rounded bg-gray-100 p-2 text-gray-600 transition hover:text-gray-600/75"
+                class="rounded bg-gray-200 p-2 text-gray-600 hover:text-gray-600/75"
                 @click="toggleDropdown"
               >
                 <svg
@@ -65,7 +65,7 @@ function toggleDropdown() {
           </div>
         </div>
       </div>
-      <div v-if="isDropdownActive" class="mb-4 space-y-1 md:hidden">
+      <div v-if="isDropdownActive" class="mb-6 space-y-2 md:hidden">
         <RouterLink
           v-for="item in navbarItems"
           :key="item.name"
