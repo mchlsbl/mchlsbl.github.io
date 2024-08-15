@@ -30,11 +30,8 @@ const router = createRouter({
         el: to.hash,
         behavior: "smooth",
       };
-    } else if (to.path === "/") {
-      return { top: 0, behavior: "smooth" };
     }
-
-    return { top: 0, behavior: "instant" };
+    return { top: 0, behavior: "smooth" };
   },
 });
 
