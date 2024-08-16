@@ -5,6 +5,7 @@ import { ref } from "vue";
 const navbarItems = [
   { name: "Home", path: "/" },
   { name: "About", path: "/#about", hash: "#about" },
+  { name: "What I do", path: "/#what-i-do", hash: "#what-i-do" },
   { name: "Projects", path: "/#projects", hash: "#projects" },
   { name: "Contact", path: "/#contact", hash: "#contact" },
   { name: "Blog", path: "/blog" },
