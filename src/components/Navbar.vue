@@ -20,14 +20,14 @@ function toggleDropdown() {
 
 <template>
   <header
-    class="bg-white/[.7] backdrop-blur-md shadow-md fixed top-0 left-0 right-0 z-50"
+    class="bg-white/[.7] backdrop-blur-md fixed top-0 left-0 right-0 z-50"
   >
     <div class="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
       <div class="flex h-16 items-center justify-between">
         <RouterLink class="block text-xl" to="/">✨ mchlsbl</RouterLink>
         <div class="md:flex md:gap-2">
           <nav class="hidden md:block">
-            <ul class="flex items-center gap-6 text-sm">
+            <ul class="flex items-center gap-6 text-lg">
               <li v-for="item in navbarItems" :key="item.name">
                 <RouterLink
                   class="text-base text-black hover:text-gray-700/75"

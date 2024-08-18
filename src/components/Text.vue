@@ -14,7 +14,7 @@ defineProps({
       <div class="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-16">
         <div
           :class="[
-            'relative h-64 overflow-hidden rounded-lg sm:h-80 lg:h-full',
+            'relative h-64 overflow-hidden rounded-3xl sm:h-80 lg:h-full',
             imgLocation,
           ]"
         >
