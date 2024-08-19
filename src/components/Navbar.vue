@@ -20,17 +20,21 @@ function toggleDropdown() {
 
 <template>
   <header
-    class="bg-white/[.7] backdrop-blur-md fixed top-0 left-0 right-0 z-50"
+    class="bg-color-navbar backdrop-blur-md fixed top-0 left-0 right-0 z-50"
   >
     <div class="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
       <div class="flex h-16 items-center justify-between">
-        <RouterLink class="block text-xl" to="/">✨ mchlsbl</RouterLink>
+        <RouterLink
+          class="text-color-navbar text-xl block on-hover-scale"
+          to="/"
+          >✨ mchlsbl</RouterLink
+        >
         <div class="md:flex md:gap-2">
           <nav class="hidden md:block">
             <ul class="flex items-center gap-6 text-lg">
               <li v-for="item in navbarItems" :key="item.name">
                 <RouterLink
-                  class="text-base text-black hover:text-gray-700/75"
+                  class="text-base text-color-navbar on-hover-opacity"
                   :to="{ path: item.path, hash: item.hash }"
                   >{{ item.name }}</RouterLink
                 >
@@ -41,23 +45,10 @@ function toggleDropdown() {
           <div class="flex items-center gap-4">
             <div class="block md:hidden">
               <button
-                class="rounded bg-gray-200 p-2 text-gray-600 hover:text-gray-600/75"
+                class="bg-color-element text-color on-hover-opacity shadow rounded-xl w-8 h-8"
                 @click="toggleDropdown"
               >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="h-5 w-5"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                  stroke-width="2"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="M4 6h16M4 12h16M4 18h16"
-                  />
-                </svg>
+                <font-awesome-icon :icon="['fas', 'bars']" />
               </button>
             </div>
           </div>
@@ -67,7 +58,7 @@ function toggleDropdown() {
         <RouterLink
           v-for="item in navbarItems"
           :key="item.name"
-          class="block text-center text-gray-700 hover:text-gray-500/75"
+          class="block text-center text-color-navbar on-hover-opacity"
           :to="{ path: item.path, hash: item.hash }"
         >
           {{ item.name }}

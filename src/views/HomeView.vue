@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import Text from "@/components/Text.vue";
-import Projects from "@/components/Projects.vue";
 import WhatIDo from "@/components/WhatIDo.vue";
+import Projects from "@/components/Projects.vue";
 </script>
 
 <template>

@@ -18,37 +18,28 @@ const projectItems = [
 </script>
 
 <template>
-  <div class="mx-auto w-full max-w-5xl px-5 py-16 md:px-10 md:py-20">
+  <div class="w-full mx-auto max-w-5xl px-5 md:px-10 py-16 md:py-20">
     <div class="flex flex-col items-stretch">
-      <h2 class="mb-5 text-center text-3xl font-bold md:text-5xl">Projects</h2>
-      <p class="mb-20 text-center text-sm sm:text-base">
-        These are some of the projects I have worked on.
-      </p>
-      <div class="grid grid-cols-1 gap-12 md:grid-cols-2">
-        <div v-for="item in projectItems">
-          <img
-            :src="item.img"
-            alt=""
-            class="rounded-3xl max-h-64 object-cover w-full"
-          />
-          <div class="px-5 py-8 sm:px-6">
-            <h5 class="text-xl mb-3 font-bold">{{ item.name }}</h5>
-            <p class="flex-col text-gray-500">{{ item.text }}</p>
-            <div class="mb-6 mt-6 flex flex-wrap gap-2">
-              <div
-                class="rounded-3xl bg-gray-300 p-2 text-sm font-semibold uppercase text-gray-700"
-                v-for="tag in item.tags"
-              >
-                <p>{{ tag }}</p>
-              </div>
-            </div>
-            <a
-              :href="item.url"
-              class="rounded-3xl bg-black px-6 py-3 text-center font-semibold text-white"
+      <h2 class="text-center mb-24 text-4xl font-bold">Featured projects.</h2>
+      <div class="gap-12 grid grid-cols-1 md:grid-cols-2">
+        <div class="mb-12" v-for="item in projectItems">
+          <a :href="item.url">
+            <img
+              :src="item.img"
+              alt=""
+              class="rounded-3xl max-h-64 object-cover w-full mb-10 on-hover-scale"
+          /></a>
+          <h5 class="text-xl mb-3 font-bold">{{ item.name }}</h5>
+          <p class="flex-col text-color">{{ item.text }}</p>
+          <div class="mb-6 mt-8 flex flex-wrap gap-2">
+            <div
+              class="text-sm font-semibold uppercase p-2 rounded-3xl bg-color-element text-color"
+              v-for="tag in item.tags"
             >
-              View Project
-            </a>
+              <p>{{ tag }}</p>
+            </div>
           </div>
+          <a :href="item.url" class="btn">View project</a>
         </div>
       </div>
     </div>

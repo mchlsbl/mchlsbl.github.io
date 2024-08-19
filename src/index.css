@@ -3,3 +3,39 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .animate {
+    @apply duration-150 transition ease-in-out;
+  }
+  .on-hover-scale {
+    @apply hover:scale-[1.025] animate;
+  }
+  .on-hover-opacity {
+    @apply hover:opacity-70 animate;
+  }
+  .on-hover-shadow {
+    @apply hover:shadow-xl animate;
+  }
+  .text-color {
+    @apply text-gray-600;
+  }
+  .text-color-navbar {
+    @apply text-black;
+  }
+  .border-color {
+    @apply border-gray-200;
+  }
+  .bg-color-element {
+    @apply bg-gray-100;
+  }
+  .bg-color-navbar {
+    @apply bg-white/[.7];
+  }
+  .icon {
+    @apply text-color on-hover-scale on-hover-opacity;
+  }
+  .btn {
+    @apply bg-black text-white font-semibold text-center rounded-3xl on-hover-shadow px-6 py-3;
+  }
+}
