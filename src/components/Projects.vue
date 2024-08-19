@@ -34,7 +34,7 @@ const projectItems = [
           <div class="px-5 py-8 sm:px-6">
             <h5 class="text-xl mb-3 font-bold">{{ item.name }}</h5>
             <p class="flex-col text-gray-500">{{ item.text }}</p>
-            <div class="mb-5 mt-6 flex flex-wrap gap-2 md:mb-6 lg:mb-8">
+            <div class="mb-6 mt-6 flex flex-wrap gap-2">
               <div
                 class="rounded-3xl bg-gray-300 p-2 text-sm font-semibold uppercase text-gray-700"
                 v-for="tag in item.tags"
