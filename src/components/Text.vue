@@ -14,7 +14,7 @@ defineProps({
       <div class="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-16">
         <div
           :class="[
-            'relative h-64 overflow-hidden rounded-3xl sm:h-80 lg:h-full',
+            'relative h-64 overflow-hidden rounded-3xl sm:h-80 lg:h-full lg:',
             imgLocation,
           ]"
         >
@@ -26,9 +26,9 @@ defineProps({
         </div>
 
         <div class="lg:py-24">
-          <h2 class="text-3xl font-bold sm:text-4xl">{{ title }}</h2>
+          <h2 class="mb-16 text-3xl font-bold sm:text-4xl">{{ title }}</h2>
 
-          <p class="mt-4 text-gray-600">
+          <p class="text-gray-600">
             <slot />
           </p>
         </div>
