@@ -1,10 +1,11 @@
 import "./index.css";
 
-import { createApp } from "vue";
+import { createApp, type Plugin } from "vue";
 
 import App from "./App.vue";
 import router from "./router";
 
+import VueWriter from "vue-writer";
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 
 import { library } from "@fortawesome/fontawesome-svg-core";
@@ -28,4 +29,5 @@ library.add(faBars, faEnvelope, faGithub);
 app.component("font-awesome-icon", FontAwesomeIcon);
 
 app.use(router);
+app.use(VueWriter as unknown as Plugin);
 app.mount("#app");
