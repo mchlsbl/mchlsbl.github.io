@@ -16,6 +16,13 @@ library.add(faBars, faEnvelope, faGithub);
 
 const app = createApp(App);
 
+declare module "@vue/runtime-core" {
+  interface ComponentCustomProperties {
+    $githubUrl: string;
+    $emailAddress: string;
+  }
+}
+
 app.config.globalProperties.$emailAddress = "mchldev@proton.me";
 app.config.globalProperties.$githubUrl = "https://github.com/mchlsbl";
 
