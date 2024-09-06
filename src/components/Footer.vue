@@ -1,3 +1,5 @@
+<script></script>
+
 <template>
   <footer>
     <div
@@ -12,19 +14,14 @@
 
         <ul class="flex gap-6 justify-center lg:justify-end mt-8 sm:mt-0">
           <a
-            href="mailto:92347868+mchlsbl@users.noreply.github.com"
+            :href="'mailto:' + $emailAddress"
             rel="noreferrer"
             target="_blank"
             class="icon"
           >
             <font-awesome-icon :icon="['fas', 'envelope']" size="xl" />
           </a>
-          <a
-            href="https://github.com/mchlsbl"
-            rel="noreferrer"
-            target="_blank"
-            class="icon"
-          >
+          <a :href="$githubUrl" rel="noreferrer" target="_blank" class="icon">
             <font-awesome-icon :icon="['fab', 'github']" size="xl" />
           </a>
         </ul>

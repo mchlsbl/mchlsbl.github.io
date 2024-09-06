@@ -1,4 +1,4 @@
-<script setup lang="ts">
+<script>
 const skillItems = [
   {
     name: "Backend development",

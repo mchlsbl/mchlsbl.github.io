@@ -16,6 +16,11 @@ library.add(faBars, faEnvelope, faGithub);
 
 const app = createApp(App);
 
+app.config.globalProperties.$emailAddress = "mchldev@proton.me";
+app.config.globalProperties.$githubUrl = "https://github.com/mchlsbl";
+
 app.component("font-awesome-icon", FontAwesomeIcon);
+
 app.use(router);
+
 app.mount("#app");
