@@ -54,7 +54,10 @@ function toggleDropdown() {
           </div>
         </div>
       </div>
-      <div v-if="isDropdownActive" class="mb-6 space-y-2 md:hidden">
+      <div
+        v-if="isDropdownActive"
+        class="mb-6 space-y-2 md:hidden transition-all duration-300 ease-in-out transform"
+      >
         <RouterLink
           v-for="item in navbarItems"
           :key="item.name"
