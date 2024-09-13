@@ -2,35 +2,35 @@
 import Text from "@/components/Text.vue";
 import WhatIDo from "@/components/WhatIDo.vue";
 import Projects from "@/components/Projects.vue";
+
+import GlitchedWriter from "vue-glitched-writer";
 </script>
 
 <template>
   <section>
-    <div class="h-screen mb-16">
-      <img
-        alt=""
-        src="../assets/bg.jpg"
-        class="absolute inset-0 object-cover w-full h-full"
-      />
-      <div class="flex flex-col items-center justify-center h-full text-white">
-        <VueWriter
-          class="mb-4 text-xl"
-          :array="[
-            'App developer',
-            'Linux enthusiast',
-            'Rust developer',
-            'Hobby gamer',
-            'Hardware tinkerer',
-            'Language lover',
-          ]"
-          :typeSpeed="60"
-          :eraseSpeed="30"
-          :caret="'underscore'"
-        />
-        <h2 class="mb-16 text-3xl">Hi, I'm mchlsbl 🤝</h2>
+    <div class="flex flex-col items-center justify-center h-full h-screen">
+      <div class="px-7 mx-auto max-w-5xl">
+        <p class="absolute font-mono text-xl">
+          <glitched-writer
+            :text="[
+              'App developer',
+              'Linux enthusiast',
+              'Hardware tinkerer',
+              'Hobby gamer',
+              'Language lover',
+            ]"
+            preset="typewriter"
+            mode="erase"
+            :queue="{
+              loop: true,
+            }"
+          />
+        </p>
+        <h2 class="my-12 text-4xl font-bold">Hi, I'm mchlsbl 🤝</h2>
+        <p>Welcome to my personal website.</p>
         <p>
-          Welcome to my personal website. I am a 20-year-old software developer
-          from Germany who enjoys coding and tinkering with electronics.
+          I am a software developer from Germany who enjoys coding and tinkering
+          with electronics.
         </p>
       </div>
     </div>
@@ -39,7 +39,7 @@ import Projects from "@/components/Projects.vue";
   <section id="about">
     <Text
       title="About."
-      img-url="https://images.unsplash.com/photo-1527529482837-4698179dc6ce?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"
+      img-url="https://images.unsplash.com/photo-1527529482837-4698179dc6ce?ixlib=rb-1.2.1"
     >
       Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
       eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
@@ -66,59 +66,42 @@ import Projects from "@/components/Projects.vue";
   </section>
 
   <section id="contact">
-    <div
-      class="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8 lg:py-16"
-    >
-      <div class="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-16">
-        <div
-          class="relative p-8 rounded-3xl shadow-lg dark:bg-dark-2 sm:p-12 bg-color-element"
-        >
+    <div class="w-full px-7 mx-auto max-w-5xl">
+      <div class="grid grid-cols-1 gap-8 lg:grid-cols-2">
+        <div class="m-auto">
+          <h2 class="text-dark mb-6 text-4xl font-bold">Contact.</h2>
+          <div
+            class="text-base leading-relaxed text-body-color dark:text-dark-6 mb-9"
+          >
+            <p>Do you have questions or want to send a request?</p>
+            <p>Just send me a quick e-mail 🙌</p>
+          </div>
+        </div>
+        <div class="p-8 relative rounded-3xl shadow-2xl my-bg-color-element">
           <form>
-            <div class="mb-6">
+            <div class="mb-3">
               <input
                 type="text"
-                placeholder="Your Name"
-                class="border-stroke dark:border-dark-3 dark:text-dark-6 dark:bg-dark text-body-color focus:border-primary w-full rounded-3xl border py-3 px-[14px] text-base outline-none"
+                placeholder="Your name"
+                class="p-3 border rounded-3xl outline-none w-full"
               />
             </div>
             <div class="mb-6">
               <input
                 type="email"
-                placeholder="Your Email"
-                class="border-stroke dark:border-dark-3 dark:text-dark-6 dark:bg-dark text-body-color focus:border-primary w-full rounded-3xl border py-3 px-[14px] text-base outline-none"
-              />
-            </div>
-            <div class="mb-6">
-              <input
-                type="text"
-                placeholder="Your Phone"
-                class="border-stroke dark:border-dark-3 dark:text-dark-6 dark:bg-dark text-body-color focus:border-primary w-full rounded-3xl border py-3 px-[14px] text-base outline-none"
+                placeholder="Your e-mail"
+                class="p-3 border rounded-3xl outline-none w-full"
               />
             </div>
             <div class="mb-6">
               <textarea
                 rows="6"
-                placeholder="Your Message"
-                class="border-stroke dark:border-dark-3 dark:text-dark-6 dark:bg-dark text-body-color focus:border-primary w-full resize-none rounded-3xl border py-3 px-[14px] text-base outline-none"
+                placeholder="Your message"
+                class="p-3 border rounded-3xl outline-none resize-none w-full"
               ></textarea>
             </div>
-            <div>
-              <button type="submit" class="w-full btn">Send Message</button>
-            </div>
+            <button type="submit" class="my-btn w-full">Send Message</button>
           </form>
-        </div>
-        <div class="mb-12 lg:mb-0">
-          <h2
-            class="text-dark mb-6 text-[32px] font-bold sm:text-[40px] lg:text-[36px] xl:text-[40px]"
-          >
-            Contact me 🙌
-          </h2>
-          <p
-            class="text-base leading-relaxed text-body-color dark:text-dark-6 mb-9"
-          >
-            Do you have questions or want to send a request? Just send me a
-            quick e-mail 😊
-          </p>
         </div>
       </div>
     </div>

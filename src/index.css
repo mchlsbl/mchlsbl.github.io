@@ -5,37 +5,44 @@
 @tailwind utilities;
 
 @layer components {
-  .animate {
-    @apply duration-150 transition ease-in-out;
+  .my-animate {
+    @apply transition ease-in-out duration-150;
   }
-  .on-hover-scale {
-    @apply hover:scale-[1.025] animate;
+
+  .my-on-hover-scale {
+    @apply my-animate hover:scale-[1.025];
   }
-  .on-hover-opacity {
-    @apply hover:opacity-70 animate;
+  .my-on-hover-opacity {
+    @apply my-animate hover:opacity-70;
   }
-  .on-hover-shadow {
-    @apply hover:shadow-xl animate;
+  .my-on-hover-shadow {
+    @apply my-animate hover:shadow-xl;
   }
-  .text-color {
+
+  .my-text-color {
     @apply text-gray-600;
   }
-  .text-color-navbar {
+  .my-text-color-navbar {
     @apply text-black;
   }
-  .border-color {
+  .my-border-color {
     @apply border-gray-200;
   }
-  .bg-color-element {
-    @apply bg-gray-100;
+
+  .my-bg-color {
+    @apply bg-white;
   }
-  .bg-color-navbar {
+  .my-bg-color-element {
+    @apply bg-gray-200;
+  }
+  .my-bg-color-navbar {
     @apply bg-white/[.7];
   }
-  .icon {
-    @apply text-color on-hover-scale on-hover-opacity;
+
+  .my-btn {
+    @apply px-6 py-3 rounded-3xl font-semibold text-center bg-black hover:bg-gray-800 text-white;
   }
-  .btn {
-    @apply bg-black text-white font-semibold text-center rounded-3xl on-hover-shadow px-6 py-3;
+  .my-icon {
+    @apply my-animate my-on-hover-scale my-on-hover-opacity my-text-color;
   }
 }

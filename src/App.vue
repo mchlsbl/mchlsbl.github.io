@@ -4,38 +4,31 @@ import Navbar from "./components/Navbar.vue";
 </script>
 
 <template>
-  <body class="min-h-screen flex flex-col justify-between">
+  <body class="flex flex-col min-h-screen justify-between">
     <Navbar />
-    <main class="flex-grow mt-16">
+    <main class="flex-grow space-y-80">
       <RouterView />
-    </main>
-    <footer>
-      <div
-        class="mx-auto max-w-screen-xl pb-8 px-4 sm:px-6 lg:px-8 pt-16 lg:pt-24"
-      >
-        <div
-          class="border-color sm:flex sm:justify-between sm:items-center border-t pt-8 mt-16 lg:mt-24"
-        >
-          <ul
-            class="flex flex-wrap gap-4 justify-center lg:justify-end text-xs"
+      <footer>
+        <div class="px-7 pb-8 mx-auto max-w-screen-xl">
+          <div
+            class="pt-8 my-border-color sm:flex sm:justify-between sm:items-center border-t"
           >
-            <li class="text-color text-sm">Thanks for visiting 👋</li>
-          </ul>
-          <ul class="flex gap-6 justify-center lg:justify-end mt-8 sm:mt-0">
-            <a
-              :href="'mailto:' + $emailAddress"
-              rel="noreferrer"
-              target="_blank"
-              class="icon"
+            <ul
+              class="flex flex-wrap gap-4 justify-center lg:justify-end text-xs"
             >
-              <font-awesome-icon :icon="['fas', 'envelope']" size="xl" />
-            </a>
-            <a :href="$githubUrl" rel="noreferrer" target="_blank" class="icon">
-              <font-awesome-icon :icon="['fab', 'github']" size="xl" />
-            </a>
-          </ul>
+              <li class="my-text-color text-sm">Thanks for visiting 👋</li>
+            </ul>
+            <ul class="flex gap-6 justify-center lg:justify-end mt-8 sm:mt-0">
+              <a :href="'mailto:' + $emailAddress" class="my-icon">
+                <font-awesome-icon :icon="['fas', 'envelope']" size="xl" />
+              </a>
+              <a :href="$githubUrl" class="my-icon">
+                <font-awesome-icon :icon="['fab', 'github']" size="xl" />
+              </a>
+            </ul>
+          </div>
         </div>
-      </div>
-    </footer>
+      </footer>
+    </main>
   </body>
 </template>

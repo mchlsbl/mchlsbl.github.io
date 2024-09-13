@@ -20,16 +20,16 @@ const skillItems = [
 </script>
 
 <template>
-  <div class="mx-auto max-w-5xl px-5 md:px-10 py-16 md:py-20">
+  <div class="px-7 mx-auto max-w-5xl">
     <div class="flex flex-col items-stretch">
       <h2 class="text-center mb-24 text-4xl font-bold">What I do.</h2>
-      <div class="gap-12 grid grid-cols-1 md:grid-cols-2">
+      <div class="gap-8 grid grid-cols-1 md:grid-cols-2">
         <div
-          class="rounded-3xl bg-color-element on-hover-shadow p-8"
+          class="p-8 rounded-3xl my-bg-color-element my-animate my-on-hover-shadow"
           v-for="item in skillItems"
         >
           <h5 class="text-xl mb-3 font-bold">{{ item.name }}</h5>
-          <p class="flex-col text-color">{{ item.text }}</p>
+          <p class="flex-col my-text-color">{{ item.text }}</p>
         </div>
       </div>
     </div>

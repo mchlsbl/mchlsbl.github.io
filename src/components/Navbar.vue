@@ -8,7 +8,6 @@ const navbarItems = [
   { name: "What I do", path: "/#what-i-do", hash: "#what-i-do" },
   { name: "Projects", path: "/#projects", hash: "#projects" },
   { name: "Contact", path: "/#contact", hash: "#contact" },
-  { name: "Blog", path: "/blog" },
 ];
 
 const isDropdownActive = ref(false);
@@ -20,12 +19,12 @@ function toggleDropdown() {
 
 <template>
   <header
-    class="bg-color-navbar backdrop-blur-md fixed top-0 left-0 right-0 z-50"
+    class="my-bg-color-navbar backdrop-blur-md fixed top-0 left-0 right-0 z-50"
   >
     <div class="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
       <div class="flex h-16 items-center justify-between">
         <RouterLink
-          class="text-color-navbar text-xl block on-hover-scale"
+          class="my-text-color-navbar text-xl block my-animate my-on-hover-scale"
           to="/"
           >✨ mchlsbl</RouterLink
         >
@@ -34,7 +33,7 @@ function toggleDropdown() {
             <ul class="flex items-center gap-6 text-lg">
               <li v-for="item in navbarItems" :key="item.name">
                 <RouterLink
-                  class="text-base text-color-navbar on-hover-opacity"
+                  class="text-base my-text-color-navbar my-animate my-on-hover-opacity"
                   :to="{ path: item.path, hash: item.hash }"
                   >{{ item.name }}</RouterLink
                 >
@@ -45,7 +44,7 @@ function toggleDropdown() {
           <div class="flex items-center gap-4">
             <div class="block md:hidden">
               <button
-                class="bg-color-element text-color on-hover-opacity shadow rounded-xl w-8 h-8"
+                class="w-8 h-8 rounded-xl my-bg-color-element my-text-color my-animate my-on-hover-opacity"
                 @click="toggleDropdown"
               >
                 <font-awesome-icon :icon="['fas', 'bars']" />
@@ -61,7 +60,7 @@ function toggleDropdown() {
         <RouterLink
           v-for="item in navbarItems"
           :key="item.name"
-          class="block text-center text-color-navbar on-hover-opacity"
+          class="block text-center my-text-color-navbar my-animate my-on-hover-opacity"
           :to="{ path: item.path, hash: item.hash }"
         >
           {{ item.name }}
