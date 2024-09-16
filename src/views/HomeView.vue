@@ -77,7 +77,7 @@ import GlitchedWriter from "vue-glitched-writer";
             <p>Just send me a quick e-mail 🙌</p>
           </div>
         </div>
-        <div class="p-8 relative rounded-3xl shadow-2xl my-bg-color-element">
+        <div class="p-8 relative rounded-3xl shadow-xl my-bg-color-element">
           <form>
             <div class="mb-3">
               <input
