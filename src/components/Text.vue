@@ -10,12 +10,12 @@ defineProps({
     <div class="px-7 mx-auto max-w-5xl">
       <div class="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-24">
         <div
-          class="relative h-64 overflow-hidden rounded-3xl sm:h-80 lg:h-full lg:order-last"
+          class="relative h-64 overflow-hidden rounded-3xl sm:h-80 lg:h-full lg:order-last shadow-2xl my-animate my-on-hover-scale"
         >
           <img
             alt=""
             :src="imgUrl"
-            class="absolute inset-0 h-full w-full object-cover shadow-2xl"
+            class="absolute inset-0 h-full w-full object-cover"
           />
         </div>
         <div class="py-8 lg:py-24">
