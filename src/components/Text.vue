@@ -8,9 +8,9 @@ defineProps({
 <template>
   <section>
     <div class="px-7 mx-auto max-w-5xl">
-      <div class="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-24">
+      <div class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:gap-24">
         <div
-          class="relative h-64 overflow-hidden rounded-3xl sm:h-80 lg:h-full lg:order-last shadow-2xl my-animate my-on-hover-scale"
+          class="relative h-64 overflow-hidden rounded-3xl sm:h-80 md:h-full md:order-last shadow-2xl my-animate my-on-hover-scale"
         >
           <img
             alt=""

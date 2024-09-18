@@ -67,12 +67,10 @@ import GlitchedWriter from "vue-glitched-writer";
 
   <section id="contact">
     <div class="w-full px-7 mx-auto max-w-5xl">
-      <div class="grid grid-cols-1 gap-8 lg:grid-cols-2">
+      <div class="grid grid-cols-1 gap-8 md:grid-cols-2">
         <div class="m-auto">
           <h2 class="text-dark mb-6 text-4xl font-bold">Contact.</h2>
-          <div
-            class="text-base leading-relaxed text-body-color dark:text-dark-6 mb-9"
-          >
+          <div class="mb-12">
             <p>Do you have questions or want to send a request?</p>
             <p>Just send me a quick e-mail 🙌</p>
           </div>
